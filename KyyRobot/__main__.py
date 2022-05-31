@@ -87,7 +87,7 @@ Click on the button bellow to get description about specifics command."""
 KYY_IMG = "https://telegra.ph/file/ba1a59bcc6dad78333c1d.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @xflyrzu \
+ You can support the project by contacting @Lost_Kiddo \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -219,7 +219,7 @@ def start(update: Update, context: CallbackContext):
                         ],
                         [
                             InlineKeyboardButton(
-                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Sentapibot?startgroup=new"),
+                                text=gs(chat.id, "add_bot_to_group_button"), url="t.me/AngelxRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -427,7 +427,7 @@ def kyy_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Sentapibot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/AngelxRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -469,8 +469,8 @@ def kyy_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/SenNotSupport"),
-                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/zusenpai"),
+                        InlineKeyboardButton(text=gs(chat.id, "support_chat_link_button"), url="t.me/angelsupports"),
+                        InlineKeyboardButton(text=gs(chat.id, "updates_channel_link_button"), url="https://t.me/angelxupdates"),
                     ],
                     [
                         InlineKeyboardButton(text=gs(chat.id, "back_button"), callback_data="kyy_"),
@@ -487,7 +487,7 @@ def kyy_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Kyy", url="t.me/IDnyaKosong"),
+                    InlineKeyboardButton(text="Kyy", url="t.me/Lost_Kiddo"),
                     InlineKeyboardButton(text="x~b", url="t.me/Xbarok"),
                  ],
                  [
@@ -548,7 +548,7 @@ def Source_about_callback(update, context):
                             InlineKeyboardButton(text=gs(chat.id, "inline_button"), switch_inline_query_current_chat=""),
                         ],
                         [
-                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/Sentapibot?startgroup=new"),
+                            InlineKeyboardButton(text=gs(chat.id, "add_bot_to_group_button"), url="t.me/AngelxRobot?startgroup=new"),
                         ]
                     ]
                 ),
@@ -785,7 +785,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1663258664:
+        if OWNER_ID != 2005952005:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -834,7 +834,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Hell yeah, i am activated🔥**""",
+                f"""**Im ALive**""",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
